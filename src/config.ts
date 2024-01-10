@@ -27,8 +27,8 @@ export const config: DefaultConfig = {
   /**
    * NuttyClient에서 인증 받은 후 얻을 수 있음
    */
-  userId: '',
-  accessToken: '',
+  userId: 'f209bdbc-d60b-47d7-b858-5b52f5f88ac2',
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1IjoxNDYzNzcwMDEsInYiOjEsImUiOjE3MDY3MDA1NzN9.ghXzsjq5sJHP3Q6lM6Q3lEFNWBMOgUg_EWzO_blFxis',
 
   /**
    * friend client에서 얻을 수 있는 AI들의 채널 url

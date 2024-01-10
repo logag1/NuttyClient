@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { setAuthInitialHeader } from '../utilities';
+import { setAuthInitialHeader, generateSignature } from '../utilities';
 import { config } from '../config';
 import { AuthInfo } from '../types';
 
@@ -23,7 +23,7 @@ export class AuthClient {
       },
       headers: {
         ...setAuthInitialHeader(),
-        'X-Nutty-Signature': '5b65a87d00b8d59df78eedb2fc2dc0864d342f67030476626de878be3af8b32aac2a8192364d8744573e7a4a1823f9ff49f571bcb2ee7799aa432db9aa71a573'
+        'X-Nutty-Signature': generateSignature(this._info.phoneNum, 'VeKHeoyaWlo')
       }
     });
 
